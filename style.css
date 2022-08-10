@@ -82,13 +82,16 @@ h1{
     margin: 0;
     left: 350px;
 }
-span{
+.stat{
     font-weight: 700;
     font-size: 30px;
     color: hsl(0, 0%, 100%);
 }
+.insight{
+        color: hsl(277, 64%, 61%);
+}
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
     body {
             margin: 0;
             padding: 0;
@@ -119,20 +122,23 @@ span{
             transform: translateY(450px);
             width: 450px;
             height: 600px;
+            border-radius: 0 0 15px 15px;
         }
         .box-b{
             position: absolute;
             transform: translateX(0);
             width: 450px;
             height: 300px;
+            border-radius: 15px 15px 0 0;
         }
         .color-overlay{
             width: 450px;
             height: 300px;
+            border-radius: 15px 15px 0 0;
         }
         .attribution{
             position: absolute;
-            transform: translateY(720px);
+            transform: translateY(760px);
         }
         p, h1{
             padding: 0;
@@ -146,8 +152,7 @@ span{
         .record-1, .record-2, .record-3{
             position: absolute;
             left: 0;
-            /* padding-left: 40px;
-            padding-bottom: 20px; */
+            width: 80px;
             }
         
         h1{
@@ -169,14 +174,15 @@ span{
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            
         }
         .record-2{
-            top: 100%;
+            top: 150%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
         .record-3 {
-            top: 150%;
+            top: 250%;
             left: 50%;
             transform: translate(-50%, -50%);
                 }
